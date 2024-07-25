@@ -260,4 +260,3 @@ function showError(message) {
 
 // Display saved lyrics on page load
 displaySavedLyrics();
-

@@ -1,5 +1,5 @@
 {
-  "name": "song-lyrics",
+  "name": "Song-Lyrics",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -11,8 +11,6 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongoose": "^6.0.12",
-    "node-fetch": "^3.0.0"
+    "node-fetch": "^3.3.2"
   }
 }
-
-

@@ -3,13 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Song Lyrics</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Lyrics App</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="container">
+      <!-- Header -->
       <div class="box box-bg">
-        <h1>Song Lyrics</h1>
+        <h1>Lyrics App</h1>
+      </div>
+
+      <!-- Lyrics Search Form -->
+      <div class="box box-bg">
         <form id="form">
           <input
             type="text"
@@ -19,16 +24,22 @@
           <button type="submit" class="btn">Search</button>
         </form>
       </div>
+
+      <!-- Search Results -->
       <div id="result" class="box"></div>
       <button id="backBtn" class="btn back" style="display: none">
         Back to Results
       </button>
+
+      <!-- Saved Lyrics List -->
       <div id="saved-lyrics-list" class="box box-bg">
         <h2>Saved Lyrics</h2>
+        <ul id="saved-lyrics-ul"></ul>
       </div>
+
+      <!-- Developer Information -->
       <div class="developer">Developed by: Korir Julius</div>
     </div>
     <script src="script.js"></script>
   </body>
 </html>
-
