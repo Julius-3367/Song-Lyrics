@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Song Lyrics</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box-bg">
+        <h1>Song Lyrics</h1>
+        <form id="form">
+          <input
+            type="text"
+            id="search"
+            placeholder="Search for any song lyrics"
+          />
+          <button type="submit" class="btn">Search</button>
+        </form>
+      </div>
+      <div id="result" class="box"></div>
+      <button id="backBtn" class="btn back" style="display: none">
+        Back to Results
+      </button>
+      <div id="saved-lyrics-list" class="box box-bg">
+        <h2>Saved Lyrics</h2>
+      </div>
+      <div class="developer">Developed by: Korir Julius</div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
