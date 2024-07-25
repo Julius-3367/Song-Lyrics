@@ -16,10 +16,13 @@ app.use(cors());
 app.use(express.json());
 
 // Serve static files from 'frontend' directory
-app.use(express.static(resolve(__dirname, 'frontend')));
+app.use(express.static(resolve(__dirname, 'Frontend')));
+
+// Set strictQuery to true or false to suppress the warning
+mongoose.set('strictQuery', true);
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/lyricsApp');
+mongoose.connect('mongodb://localhost:27017/lyricsApp', { useNewUrlParser: true, useUnifiedTopology: true });
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
@@ -109,5 +112,3 @@ app.delete('/delete-lyrics/:id', async (req, res) => {
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-
-
