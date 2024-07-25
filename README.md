@@ -1,4 +1,4 @@
-# Lyrics App
+# Song Lyrics 
 
 A web application for searching, saving, and managing song lyrics. This app leverages the Lyrics.ovh API for retrieving lyrics and uses MongoDB for storing user-saved lyrics.
 
@@ -29,8 +29,8 @@ A web application for searching, saving, and managing song lyrics. This app leve
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your-username/lyrics-app.git
-   cd lyrics-app
+   git clone https://github.com/your-username/Song-Lyrics.git
+   cd Song Lyrics
 
 Install Dependencies:
 
